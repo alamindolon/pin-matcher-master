@@ -59,3 +59,30 @@ document.getElementById('calculator').addEventListener('click',function(event){
 
 
 })
+document.getElementById('submit_ID').addEventListener('click',function()
+{
+    const generateFiled = document.getElementById('display_input_filed');
+    const generatedisplay = generateFiled.value;
+
+    const calculatorFiled = document.getElementById('calculator_display');
+    const calculatordisplay = calculatorFiled.value;
+
+    const succesID = document.getElementById('succes_ID');
+    const failed = document.getElementById('failed_ID');
+
+    if(generatedisplay == calculatordisplay)
+    {
+        
+        succesID.style.display = 'block';
+        failed.style.display = 'none';
+    }
+    else
+    {
+       
+        failed.style.display = 'block';
+        succesID.style.display = 'none';
+    }
+
+
+   
+})
